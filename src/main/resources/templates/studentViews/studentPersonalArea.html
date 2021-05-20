@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01
+Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>UNIVERSITY</title>
+    <style>
+        body {
+            background-color: #c7b39b; /* ???? ???? */
+        }
+
+        a {
+            font-size: 45pt; /* ?????? ?????? ? ??????? */
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        button {
+            height: 100px;
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div align="center">
+    <a class="click-me" href="/" target="_blank"><big>Welcome Page</big></a>
+    <a class="click-me" href="/studentViews/schedule" target="_blank"><big>My schedule</big></a>
+</div>
+
+<div align="center">
+<form class="form-inline my-2 my-lg-0" form-method="post" th:action="@{/logout}">
+    <button class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit"><big>Logout</big></button>
+</form>
+</div>
+<br>
+<img class="center" src="https://pk.nau.edu.ua/wp-content/uploads/2019/07/nau_21.jpg">
+
+
+</body>
+</html>

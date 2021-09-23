@@ -25,6 +25,7 @@ public class GroupController {
     @Autowired
     StudentService studentService;
 
+    
     @GetMapping("groups")
     public String groupsPage(Model model) {
         List<Group> groupList = groupService.getAll();

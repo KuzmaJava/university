@@ -60,7 +60,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         public Collection<? extends GrantedAuthority> getAuthorities() {
             return authorities;
         }
-
+  
         @Override
         public String getPassword() {
             return password;

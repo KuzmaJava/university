@@ -10,4 +10,4 @@ public class DyplomProjectApplication {
         SpringApplication.run(DyplomProjectApplication.class, args);
     }
 
-}
+} 

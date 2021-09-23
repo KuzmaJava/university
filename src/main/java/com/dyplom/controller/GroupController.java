@@ -20,11 +20,12 @@ public class GroupController {
     private static final String GROUP_MODEL = "group";
 
     @Autowired
-    GroupService groupServices;
+    GroupService groupService;
 
     @Autowired
     StudentService studentService;
 
+    
     @GetMapping("groups")
     public String groupsPage(Model model) {
         List<Group> groupList = groupService.getAll();

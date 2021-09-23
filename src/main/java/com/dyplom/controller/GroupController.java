@@ -20,7 +20,7 @@ public class GroupController {
     private static final String GROUP_MODEL = "group";
 
     @Autowired
-    GroupService groupService;
+    GroupService groupServices;
 
     @Autowired
     StudentService studentService;

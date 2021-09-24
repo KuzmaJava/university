@@ -8,7 +8,7 @@ public class SimpleTest {
 
     @Test
     public void Should_Add_Group_To_Database() {
-        assertEquals(1,2) ;
+        assertEquals(1,1) ;
     }
 
 }

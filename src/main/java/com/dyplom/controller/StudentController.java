@@ -51,37 +51,37 @@ public class StudentController {
         Integer groupId = studentService.getGroupIdByStudentLogin(studentLogin);
         List<LessonDTO> lessons = lessonService.getScheduleForStudent(groupId);
         model.addAttribute("lessons", lessons);
-        return "/studentViews/studentSchedule";
+        return "studentViews/studentSchedule";
     }
 
     @GetMapping("studentPersonalArea")
     public String studentPersonalArea(Model model) {
-        return "/studentViews/studentPersonalArea";
+        return "studentViews/studentPersonalArea";
     }
 
     @GetMapping("editStudent")
     public String editStudent(Model model, @RequestParam(value = "studentId") Integer studentId) {
         StudentDTO studentDTO = studentService.getStudentDtoById(studentId);
         model.addAttribute(STUDENT_MODEL, studentDTO);
-        return "/studentViews/editStudent";
+        return "studentViews/editStudent";
     }
 
     @GetMapping("addStudent")
     public String addStudent(Model model) {
         model.addAttribute(STUDENT_MODEL, new StudentDTO());
-        return "/studentViews/addStudent";
+        return "studentViews/addStudent";
     }
 
     @GetMapping(value = "studentDescription")
     public String readStudent(Model model, @RequestParam(value = "studentId") Integer studentId) {
         StudentDTO studentDTO = studentService.getStudentDtoById(studentId);
         model.addAttribute("studentDto", studentDTO);
-        return "/studentViews/studentDescription";
+        return "studentViews/studentDescription";
     }
 
     @GetMapping("removeStudent")
     public String removeStudent(Model model, @RequestParam(value = "studentId") Integer studentId) {
         studentService.removeStudent(studentService.getStudentById(studentId));
-        return "/studentViews/removeStudent";
+        return "studentViews/removeStudent";
     }
 }

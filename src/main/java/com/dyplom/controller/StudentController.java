@@ -41,7 +41,7 @@ public class StudentController {
     public String showStudents(Model model) {
         List<StudentDTO> students = studentService.getAllStudentDtos();
         model.addAttribute("students", students);
-        return "/studentViews/studentsPage";
+        return "studentViews/studentsPage";
     }
 
     @GetMapping("schedule")

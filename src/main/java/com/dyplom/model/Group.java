@@ -21,5 +21,5 @@ public class Group {
     @NotNull
     @Size(min = 4,max=4, message = "Group name should consist of 4 symbols!")
     @Column(name = "group_name")
-    private String groupName;
+    private String groupName; 
 }

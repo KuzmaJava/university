@@ -12,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Table(name = "students", schema = "public")
 public class Student {
-    @Id
+    @Id 
     @Column(name = "student_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int studentId;
